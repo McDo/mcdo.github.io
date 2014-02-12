@@ -1,0 +1,227 @@
+
+@import "./_base";
+
+#wrapper {
+	width: 100%;
+	position: relative;
+
+	#device {
+		width: 384px;
+		height: 804px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 80px;
+		background: transparent url('../images/iphone5c.png') no-repeat left top;
+		background-size: 100%;
+
+	/*------- end of #device -------*/
+	}
+
+	#notification {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 0;
+		overflow: hidden;
+
+	/*------- end of #notification -------*/
+	}
+
+	#noty {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 320px;
+		height: 568px;
+		background-color: rgba(0, 0, 0, 0.8);
+
+		#noty-tab {
+			position: relative;
+			margin: 20px auto;
+			width: 309px;
+			color: rgba(255, 255, 255, 0.9);
+			border: 1px solid rgba(255, 255, 255, 0.6);
+			@include border-radius(5px);
+			font-family: 'RalewayRegular';
+			overflow: hidden;
+
+			li {
+				width: 102px;
+				@include float-left;
+				text-align: center;
+				padding: 7px 0;
+				font-size: 10px;
+			}
+
+			.all {
+				border-right: 1px solid rgba(255, 255, 255, 0.6);
+			}
+
+			.today {
+				background-color: rgba(255, 255, 255, 0.6);
+				color: rgba(0, 0, 0, 1);
+			}
+
+			@include clearfix;
+
+		/*------- end of #noty-tab -------*/
+		}
+
+		#noty-content {
+			position: relative;
+			width: 100%;
+			border-top: 1px solid rgba(255, 255, 255, 0.3);
+			font-family: "RalewayThin";
+
+			#noty-date {
+				color: rgba(255, 255, 255, 0.7);
+				padding-top: 25px;
+				padding-left: 40px;
+
+				h1 {
+					font-size: 32px;
+					font-weight: normal;
+					line-height: 1.2;
+
+					sup {
+						font-size: 50%;
+						line-height: 0;
+						position: relative;
+						vertical-align: baseline;
+						top: -0.5em;
+					}
+				}
+
+				p {
+					font-family: "RalewayLight";
+					position: relative;
+					top: 20px;
+					line-height: 1.4;
+				}
+
+			/*------- end of #noty-date -------*/
+			}
+
+			#noty-stock {
+				position: relative;
+				top: 65px;
+				width: 100%;
+				height: 220px;
+				color: rgba(255, 255, 255, 0.8);
+
+				#noty-stock-logo {
+					position: absolute;
+					left: 15px;	
+					width: 30px;
+				}
+
+				#noty-stock-list {
+					width: 80%;
+					position: absolute;
+					right: 0;
+
+					li {
+						padding: 6px 0;
+						border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+						.noty-stock-list-item {
+							@include float-left;
+						}
+
+						@include clearfix;
+					}
+
+					#noty-stocks {
+						padding-bottom: 15px;
+					}
+
+					.noty-stock-list-name {
+						width: 33%;
+						line-height: 30px;
+					}
+
+					.noty-stock-list-number {
+						text-align: right;
+						width: 28%;
+						padding-right: 16px;
+						line-height: 30px;
+						color: rgba(255, 255, 255, 0.4);
+					}
+
+					.noty-stock-list-float {
+						width: 27%;
+						@include border-radius(2px);
+						text-align: center;
+						background-color: #fc3d39;
+						padding: 8px 0;
+					}
+
+					.noty-stock-list-float3 {
+						background-color: #53d769;
+					}
+
+				/*------- end of #noty-stock-list -------*/
+				}
+
+				#noty-stock-show-all {
+					padding: 15px 0;
+					width: 80%;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					color: rgba(255, 255, 255, 0.4);
+				}
+
+			/*------- end of #noty-date -------*/
+			}
+
+		/*------- end of #noty-content -------*/
+		}
+
+		#noty-footer {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 26px;
+			border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+			#noty-footer-arrow {
+				position: relative;
+				top: 6px;
+				display: block;
+				margin: 0 auto;
+				width: 37px;
+				height: auto;
+			}
+
+		/*------- end of #noty-footer -------*/
+		}
+		
+	/*------- end of #noty -------*/
+	}
+
+
+	#screen {
+		position: relative;
+		width: 320px;
+		height: 568px;
+		background: transparent url('../images/home.png') no-repeat left top;
+		background-size: 100%;
+		top: 115px;
+		left: 34px;
+
+	/*------- end of #screen -------*/
+	}
+
+	#touch-area {
+		position: absolute;
+		width: 320px;
+		height: 568px;
+		top: 115px;
+		left: 34px;
+		z-index: 999;
+	}
+
+/*------- end of #wrapper -------*/
+}

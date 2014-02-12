@@ -1,0 +1,34 @@
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	-ms-touch-action: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url('../font/Raleway-Regular.otf');
+}
+
+@font-face {
+	font-family: RalewayLight;
+	src: url('../font/Raleway-Light.otf');
+}
+
+@font-face {
+	font-family: RalewayExtraLight;
+	src: url('../font/Raleway-ExtraLight.otf');
+}
+
+@font-face {
+	font-family: RalewayThin;
+	src: url('../font/Raleway-Thin.otf');
+}
