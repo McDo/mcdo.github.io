@@ -90,7 +90,7 @@ $(document).ready(function() {
 				 *
 				 * if : 
 				 * 	1. the notification panel has been dragged out from the top edge; 
-				 * 	2. you move your finger/mouse within the $('#touch-area') area;
+				 * 	2. you move your mouse within the $('#touch-area') area;
 				 *
 				 * then : 
 				 * 	we are fine to drag it down the way.
@@ -110,7 +110,7 @@ $(document).ready(function() {
 				 * if : 
 				 * 	1. the notification panel has reached to bottom edge; 
 				 * 	2. the notification panel has been dragged from the bottom edge; 
-				 * 	3. you move your finger/mouse within the $('#touch-area');
+				 * 	3. you move your mouse within the $('#touch-area');
 				 *
 				 * then : 
 				 * 	we are fine to drag it down the way.
@@ -130,8 +130,8 @@ $(document).ready(function() {
 
 
 			/* put the notification panel into its right places 
-			 * at the end of the dragging if your finger/mouse
-			 * was still in the $('#touch-area').
+			 * at the end of the dragging if your mouse was still
+			 * in the $('#touch-area').
 			 */
 			Hammer( touchArea ).on( 'dragend', function( e ) {
 
@@ -153,8 +153,8 @@ $(document).ready(function() {
 
 
 			/* get the notification panel moved to the right 
-			 * places in case you moved finger/mouse out of
-			 * the $('#touch-area').
+			 * places in case you moved mouse out of the
+			 * $('#touch-area').
 			 */
 			Hammer( device ).on( 'dragend', function( e ) {
 

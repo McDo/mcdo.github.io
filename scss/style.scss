@@ -5,6 +5,17 @@
 	width: 100%;
 	position: relative;
 
+	#indicator {
+		width: 174px;
+		height: 86px;
+		position: absolute;
+		top: 20px;
+		left: -webkit-calc(50% - 370px);
+		left: -moz-calc(50% - 370px);
+		left: calc(50% - 370px);
+		background: transparent url('../images/drag_from_edge.png') no-repeat left top;
+	}
+
 	#device {
 		width: 384px;
 		height: 804px;
