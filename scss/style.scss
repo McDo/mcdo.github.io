@@ -11,9 +11,9 @@
 		position: absolute;
 		top: 20px;
 		left: 63%;
-		// left: -webkit-calc(50% + 200px);
-		// left: -moz-calc(50% + 200px);
-		// left: calc(50% + 200px);
+		left: -webkit-calc(50% + 200px);
+		left: -moz-calc(50% + 200px);
+		left: calc(50% + 200px);
 		background: transparent url('../images/drag_from_edge.png') no-repeat left top;
 	}
 
