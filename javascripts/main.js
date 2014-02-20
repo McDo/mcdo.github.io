@@ -58,7 +58,7 @@ $(document).ready(function() {
 
 			Hammer( device ).on( 'drag', function( e ) {
 
-				var deviceOffsetY = e.gesture.srcEvent.offsetY;
+				var deviceOffsetY = e.gesture.srcEvent.layerY;
 
 				// start to pull out notification panel from top edge.
 				if ( deviceOffsetY > 0 && deviceOffsetY < 5 ) {
@@ -83,7 +83,7 @@ $(document).ready(function() {
 
 			Hammer( touchArea ).on( 'drag', function( e ) {
 
-				var touchAreaOffsetY = e.gesture.srcEvent.offsetY;
+				var touchAreaOffsetY = e.gesture.srcEvent.layerY;
 
 				/** 
 				 * pull out notification panel from top edge.
