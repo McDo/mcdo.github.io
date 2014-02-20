@@ -1,5 +1,5 @@
-Dummy IOS7 Notification Center 
-===============================
+A Dummy IOS7 Notification Center 
+================================
 
 
 License
