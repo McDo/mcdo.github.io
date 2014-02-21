@@ -1,7 +1,7 @@
 A Dummy IOS7 Notification Center 
 ================================
 
-###website: [Devportal | Logicdesign](http://http://devportal.logicdesign.cn/?p=641)
+###website: [Devportal | Logicdesign](http://devportal.logicdesign.cn/?p=641)
 
 
 License
